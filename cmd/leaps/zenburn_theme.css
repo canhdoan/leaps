@@ -13,7 +13,7 @@
 .cm-s-zenburn .CodeMirror-cursor { border-left: 1px solid white; }
 .cm-s-zenburn { background-color: #282a36; color: #dcdccc; }
 .cm-s-zenburn span.cm-builtin { color: #dcdccc; font-weight: bold; }
-.cm-s-zenburn span.cm-comment { color: #7f9f7f; }
+.cm-s-zenburn span.cm-comment { color: #6272a4; }
 .cm-s-zenburn span.cm-keyword { color: #ff79c6; font-weight: bold; }
 .cm-s-zenburn span.cm-atom { color: #bfebbf; }
 .cm-s-zenburn span.cm-def { color: #dcdccc; }
