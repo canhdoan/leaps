@@ -143,7 +143,7 @@ function init_leaps(after) {
 		default_options.viewPortMargin = "Infinity";
 
 		cm_editor = CodeMirror(document.getElementById("editor"), default_options);
-        cm_editor_console = CodeMirror(Document.getElementById("editor_console"), default_options);
+        cm_editor_console = CodeMirror(document.getElementById("editor-console"), default_options);
 
 		configure_codemirror();
 	}
@@ -152,7 +152,7 @@ function init_leaps(after) {
     if ( console_leaps_client !== null ) {
         return;
     }
-    console_leaps_client = new leaps_client();
+    console_leaps_client = new leap_client();
     console_leaps_client.bind_codemirror(cm_editor_console);
 
 	if ( leaps_client !== null ) {
