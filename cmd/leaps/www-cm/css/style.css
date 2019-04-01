@@ -258,7 +258,7 @@ header > .buttons-container, header > .icon-container {
 .grid-container {
 	display: grid;
 	grid-template-columns: 35% 65%;
-	grid-template-rows: 50px 100fr;
+	grid-template-rows: 50px 80fr 20fr;
 }
 
 #app {
@@ -342,6 +342,17 @@ header > .buttons-container, header > .icon-container {
 	grid-column-end: 3;
 	grid-row-start: 2;
 	grid-row-end: 3;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+}
+
+#editor-console {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
 	position: absolute;
 	height: 100%;
 	width: 100%;

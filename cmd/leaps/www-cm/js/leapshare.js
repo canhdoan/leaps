@@ -14,7 +14,7 @@ var cm_keymaps = {
 
 var cm_themes = {
 	Light: "default",
-	Dark: "zenburn"
+	Dark: "dracula"
 };
 
 /*------------------------------------------------------------------------------
@@ -23,6 +23,8 @@ var cm_themes = {
 
 var cm_editor = null;
 var leaps_client = null;
+var cm_editor_console = null;
+var console_leaps_client = null;
 var username = Cookies.get("username") || "anon";
 Cookies.set("username", username, { path: '', expires: 7 });
 
@@ -141,9 +143,17 @@ function init_leaps(after) {
 		default_options.viewPortMargin = "Infinity";
 
 		cm_editor = CodeMirror(document.getElementById("editor"), default_options);
+        cm_editor_console = CodeMirror(Document.getElementById("editor_console"), default_options);
 
 		configure_codemirror();
 	}
+
+    /*HARD CODE: Create client for editor console*/
+    if ( console_leaps_client !== null ) {
+        return;
+    }
+    console_leaps_client = new leaps_client();
+    console_leaps_client.bind_codemirror(cm_editor_console);
 
 	if ( leaps_client !== null ) {
 		after();

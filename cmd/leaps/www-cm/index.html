@@ -19,7 +19,7 @@
 		<script type="text/javascript" src="js/leapshare.js"></script>
 		<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
 		<link href="lib/codemirror.css" type="text/css" rel="stylesheet">
-		<link href="theme/zenburn.css" type="text/css" rel="stylesheet">
+		<link href="theme/dracula.css" type="text/css" rel="stylesheet">
 		<link href="addon/dialog/dialog.css" type="text/css" rel="stylesheet">
 		<link href="css/style.css" type="text/css" rel="stylesheet">
 
@@ -139,6 +139,13 @@
 		</div>
 		<div id="editor">
 		</div>
+        <div id="editor-console">
+          <div class="icon-container">
+				<a class="undecorated" href="https://github.com/jeffail/leaps">
+					<h1 class="inline">Leaps</h1><img src="leaps_logo.png" class="inline logo">
+				</a>
+			</div>
+        </div>
 		<div v-if="options.length > 0" id="cmd-menu" class="fw-font foreground border-top">
 			<button v-on:click="run_cmd" class="border-right">
 				<i class="fa fa-play" aria-hidden="true"></i>
